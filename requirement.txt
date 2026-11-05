@@ -1,0 +1,6 @@
+sqlalchemy
+fastapi
+uvicorn
+sqlite
+pydantic
+fpdf
