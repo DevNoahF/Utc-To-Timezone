@@ -1,12 +1,11 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+
 
 class UserRequest(BaseModel):
-    Name: str
-    Email: str
-    Timezone: str
+    name: str
+    email: str
+    timezone: str
 
-class UserUpdateRequest(BaseModel):
-    Id: int
-    Name: str
-    Email: str
-    Timezone: str
+
+class UserUpdateRequest(UserRequest):
+    id: int
